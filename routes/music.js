@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 var Music = require('../models').Music;
 
-// GET /movies
+// GET /music
 router.get('/', function(req, res) {
-  //SELECT * FROM movies
+  //SELECT * FROM music
   Music.all({
     order: [
       ['createdAt', 'ASC']
